@@ -15,9 +15,9 @@
         include 'koneksi.php';
         $no = 1;
         $query = "SELECT * FROM tbl_mahasiswa ORDER BY id DESC";
-        $dewan1 = $db1->prepare($query);
-        $dewan1->execute();
-        $res1 = $dewan1->get_result();
+        $bambang1 = $db1->prepare($query);
+        $bambang1->execute();
+        $res1 = $bambang1->get_result();
 
         if ($res1->num_rows > 0) {
             while ($row = $res1->fetch_assoc()) {
